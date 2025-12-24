@@ -546,7 +546,21 @@ ul.side-nav#slide-out a i {
   
   /* Reset the large top padding for the first section on mobile */
   .section:first-of-type {
-      padding-top: 6rem; /* Standard padding */
+      padding-top: 3rem; /* Reduced padding from 6rem */
+  }
+  
+  /* Hide intro image on mobile */
+  #intro .row .col.s12.m5.l4 img {
+      display: none;
+  }
+  
+  /* Reduce top margin of content on mobile */
+  #intro .content {
+      margin-top: 10px !important;
+  }
+
+  .avatar-img {
+    display: none;
   }
 
   main {
@@ -572,6 +586,12 @@ ul.side-nav#slide-out a i {
     padding-bottom: 60px;
   }
 
+  .buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   .button-collapse {
     color: var(--primary);
   }
@@ -587,6 +607,10 @@ ul.side-nav#slide-out a i {
     justify-content: center;
     align-items: center;
     text-align: center;
+  }
+  
+  .page-title{
+    margin-left: 1em;
   }
   
   #logo-container {
